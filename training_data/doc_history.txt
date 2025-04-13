@@ -1,0 +1,4 @@
+1. Whenever we have DATE field in the query , make it DATE('YYYY-MM-DD') format to be read by athena.
+2. Completed Orders refers to count of job_id with status = 'Completed'.
+3. Cancelled Orders refers to count of job_id with status = 'Cancelled'.
+4. Delayed Orders refers to count of job_id with minutes_late > 0.

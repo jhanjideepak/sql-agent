@@ -1,0 +1,21 @@
+SELECT COUNT(DISTINCT job_id) AS number_of_grocery_orders
+FROM order_level_data
+WHERE job_date = DATE('2025-02-01')
+AND vertical = 'grocery'
+AND job_status = 'Completed';
+
+SELECT COUNT(DISTINCT job_id) AS number_of_grocery_orders
+FROM order_level_data
+WHERE job_date = DATE('2025-02-10')
+AND zone = 'Dubai'
+AND vertical = 'grocery';
+
+select pilot, count(job_id) as total_orders
+from order_level_data
+where job_date between current_date - interval '30' day and
+current_date - interval '1' day
+and job_status = 'Completed'
+and minutes_late = 0
+group by pilot
+order by total_orders desc
+limit 5;
