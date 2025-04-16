@@ -1,4 +1,4 @@
-# SQL Insight Bot with Milvus and Athena Integration
+# SQL with Milvus and Vanna Integration
 
 This project is a SQL Insight Bot that leverages **Milvus** for vector database operations, **Athena** for SQL query execution, and **Streamlit** for a user-friendly interface. The bot generates SQL queries from natural language inputs, executes them, and provides results while allowing user feedback for continuous improvement.
 
